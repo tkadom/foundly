@@ -1,0 +1,22 @@
+<% form_for :item, @item, :url => item_path, :html => { :multipart => true, :method => :put, :class => 'ItemForm' }  do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+  <h2><%= f.label :title -%></h2>
+    <%= f.text_field :title %>
+    </p>
+  <p>
+  <h2><%= f.label :description %></H2> <%= f.text_area :description, :rows=>6, :cols => 60 %>
+  </p>
+  <p>
+  <h2>  <%= f.label "Picture of Item" %></h2>
+    <%= image_tag @item.picture.url(:thumb) %>
+    <%= f.file_field :picture %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @item %> |
+<%= link_to 'Back', items_path %>

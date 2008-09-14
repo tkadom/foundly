@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title><%= h(yield(:title) || "Untitled") %></title>
+    <%= stylesheet_link_tag 'foundly' %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    
+    <!-- Begin Wrapper -->
+    <div id="wrapper">
+
+      <!-- Begin Header -->
+      <div id="header">
+        <%= link_to(image_tag("/images/foundly.png", :class => "left"), root_path) %>
+        <h3 class="right">
+        <% if logged_in? %>
+                Logged in as:
+                <%= link_to h(current_user.login.capitalize), user_path(current_user) %>
+                <%= link_to 'Log Out', logout_url %>
+         <% else %>
+                Welcome! 
+                <%= link_to 'Log In', new_session_path %> 
+                or 
+                <%= link_to 'Sign Up', new_user_path %>
+                <% end %>
+        </h3>
+        <%= yield(:header) %>
+      </div>
+      <!-- End Header -->
+      <!-- Begin Navigation -->
+      <div id="navigation">
+      </div>
+      <!-- End Navigation -->
+      <!-- Begin content wrapper -->
+      <div id="faux">
+        
+        <!-- Begin Left Column -->
+        <div id="leftcolumn">
+          <%= yield (:left) %>
+          <%- flash.each do |name, msg| -%>
+            <%= content_tag :div, msg, :id => "flash_#{name}" %>
+          <%- end -%>
+      
+          <%- if show_title? -%>
+            <h1><%=h yield(:title) %></h1>
+          <%- end -%>
+          <%= yield(:layout) %>
+          <div class="clear"></div>
+        </div>
+        <!-- End Left Column -->
+    
+        <!-- Begin Right Column -->
+        <div id="sidebar">
+          <%= yield(:sidebar) %>
+          <div class="clear"></div>
+        </div>
+        <!-- End Right Column -->
+      </div>
+      <!-- End Faux Column -->
+      <div id="footer">
+        <%= yield(:footer) %>
+      </div>
+    </div>
+    <!-- end Wrapper -->
+  </body>
+</html>

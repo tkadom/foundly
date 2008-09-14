@@ -1,0 +1,78 @@
+[2008-09-13 20:21:31] INFO  WEBrick 1.3.1
+[2008-09-13 20:21:31] INFO  ruby 1.8.5 (2006-08-25) [i486-linux]
+[2008-09-13 20:21:31] INFO  WEBrick::HTTPServer#start: pid=20808 port=6500
+/home/tkadom/dev/foundly/app/views/layouts/application.html.erb:41: warning: don't put space before argument parentheses
+71.59.50.130 - - [13/Sep/2008:20:21:40 EDT] "GET /items HTTP/1.1" 200 3148
+- -> /items
+71.59.50.130 - - [13/Sep/2008:20:21:41 EDT] "GET /favicon.ico HTTP/1.1" 200 0
+http://teachcast.net:6500/items -> /favicon.ico
+71.59.50.130 - - [13/Sep/2008:20:21:41 EDT] "GET /stylesheets/foundly.css?1221349414 HTTP/1.1" 200 4214
+http://teachcast.net:6500/items -> /stylesheets/foundly.css?1221349414
+71.59.50.130 - - [13/Sep/2008:20:21:41 EDT] "GET /images/foundly.png?1221347281 HTTP/1.1" 200 8489
+http://teachcast.net:6500/items -> /images/foundly.png?1221347281
+71.59.50.130 - - [13/Sep/2008:20:21:41 EDT] "GET /images/faux-2-2-col.gif HTTP/1.1" 200 361
+http://teachcast.net:6500/items -> /images/faux-2-2-col.gif
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET / HTTP/1.1" 200 1933
+- -> /
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET /stylesheets/foundly.css?1221349414 HTTP/1.1" 200 4214
+http://teachcast.net:6500/ -> /stylesheets/foundly.css?1221349414
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET /images/foundly.png?1221347281 HTTP/1.1" 200 8489
+http://teachcast.net:6500/ -> /images/foundly.png?1221347281
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET /images/faux-2-2-col.gif HTTP/1.1" 200 361
+http://teachcast.net:6500/stylesheets/foundly.css?1221349414 -> /images/faux-2-2-col.gif
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET /images/foundly-man.png?1221347890 HTTP/1.1" 200 32575
+http://teachcast.net:6500/ -> /images/foundly-man.png?1221347890
+76.97.43.99 - - [13/Sep/2008:20:34:04 EDT] "GET /favicon.ico HTTP/1.1" 200 0
+- -> /favicon.ico
+71.59.50.130 - - [13/Sep/2008:21:24:42 EDT] "GET /items HTTP/1.1" 500 15418
+- -> /items
+/home/tkadom/dev/foundly/app/views/items/index.html.erb:12: warning: parenthesize argument(s) for future version
+71.59.50.130 - - [13/Sep/2008:21:25:50 EDT] "GET /items HTTP/1.1" 500 15454
+- -> /items
+71.59.50.130 - - [13/Sep/2008:21:25:50 EDT] "GET /favicon.ico HTTP/1.1" 200 0
+http://teachcast.net:6500/items -> /favicon.ico
+/home/tkadom/dev/foundly/app/views/items/index.html.erb:12: warning: parenthesize argument(s) for future version
+71.59.50.130 - - [13/Sep/2008:21:26:10 EDT] "GET /items HTTP/1.1" 500 15458
+- -> /items
+71.59.50.130 - - [13/Sep/2008:21:26:11 EDT] "GET /favicon.ico HTTP/1.1" 200 0
+http://teachcast.net:6500/items -> /favicon.ico
+71.59.50.130 - - [13/Sep/2008:21:37:09 EDT] "GET / HTTP/1.1" 200 1933
+- -> /
+71.59.50.130 - - [13/Sep/2008:21:37:10 EDT] "GET /images/foundly-man.png?1221347890 HTTP/1.1" 304 0
+http://teachcast.net:6500/ -> /images/foundly-man.png?1221347890
+71.59.50.130 - - [13/Sep/2008:21:37:10 EDT] "GET /images/foundly.png?1221347281 HTTP/1.1" 304 0
+http://teachcast.net:6500/ -> /images/foundly.png?1221347281
+71.59.50.130 - - [13/Sep/2008:21:37:10 EDT] "GET /stylesheets/foundly.css?1221349414 HTTP/1.1" 304 0
+http://teachcast.net:6500/ -> /stylesheets/foundly.css?1221349414
+/home/tkadom/dev/foundly/app/views/items/index.html.erb:12: warning: parenthesize argument(s) for future version
+71.59.50.130 - - [13/Sep/2008:21:37:10 EDT] "GET /items HTTP/1.1" 500 15458
+- -> /items
+71.59.50.130 - - [13/Sep/2008:21:37:11 EDT] "GET /items/2 HTTP/1.1" 200 1662
+- -> /items/2
+71.59.50.130 - - [13/Sep/2008:21:37:12 EDT] "GET /images/foundly.png?1221347281 HTTP/1.1" 304 0
+http://teachcast.net:6500/items/2 -> /images/foundly.png?1221347281
+71.59.50.130 - - [13/Sep/2008:21:37:12 EDT] "GET /pictures/2/original/blue-cluster-sm.png?1221351541 HTTP/1.1" 304 0
+http://teachcast.net:6500/items/2 -> /pictures/2/original/blue-cluster-sm.png?1221351541
+71.59.50.130 - - [13/Sep/2008:21:37:12 EDT] "GET /stylesheets/foundly.css?1221349414 HTTP/1.1" 304 0
+http://teachcast.net:6500/items/2 -> /stylesheets/foundly.css?1221349414
+71.59.50.130 - - [13/Sep/2008:21:37:12 EDT] "GET /items/2/edit HTTP/1.1" 200 2247
+- -> /items/2/e[2008-09-13 22:13:46] INFO  WEBrick 1.3.1
+[2008-09-13 22:13:46] INFO  ruby 1.8.5 (2006-08-25) [i486-linux]
+[2008-09-13 22:13:46] WARN  TCPServer Error: Address already in use - bind(2)
+/usr/lib/ruby/1.8/webrick/utils.rb:73:in `initialize': Address already in use - bind(2) (Errno::EADDRINUSE)
+	from /usr/lib/ruby/1.8/webrick/utils.rb:73:in `new'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:73:in `create_listeners'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:70:in `each'
+	from /usr/lib/ruby/1.8/webrick/utils.rb:70:in `create_listeners'
+	from /usr/lib/ruby/1.8/webrick/server.rb:75:in `listen'
+	from /usr/lib/ruby/1.8/webrick/server.rb:63:in `initialize'
+	from /usr/lib/ruby/1.8/webrick/httpserver.rb:24:in `initialize'
+	from /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/webrick_server.rb:58:in `new'
+	 ... 7 levels...
+	from /usr/lib/ruby/gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+	from /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+	from script/server:3
+=> Booting WEBrick...
+=> Rails 2.1.0 application started on http://0.0.0.0:6500
+=> Ctrl-C to shutdown server; call with --help for options

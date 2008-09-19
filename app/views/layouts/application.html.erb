@@ -3,9 +3,20 @@
 <html>
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
-    <%= stylesheet_link_tag 'foundly' %>
-      <%= javascript_include_tiny_mce_if_used %>
-      <%= tiny_mce if using_tiny_mce? %>
+      <%= javascript_include_tiny_mce %> 
+      <%= stylesheet_link_tag 'foundly' %>
+<script type="text/javascript">
+//<![CDATA[
+tinyMCE.init({
+mode : 'textareas',
+theme : 'advanced',
+theme_advanced_toolbar_location: "top",
+theme_advanced_toolbar_align : "left",
+plugins : "contextmenu,paste"
+});
+//]]>
+</script>
+
     <%= yield(:head) %>
   </head>
   <body>

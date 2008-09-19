@@ -1,22 +1,22 @@
+require 'tiny_mce'
 class ItemsController < ApplicationController
   layout 'application'
 
-  # initialize tinyMCE for new and edit action
    uses_tiny_mce(:options => {  
-       :theme => 'advanced',  
-       :mode => "textareas",  
-       :height => 100,  
-       :content_css => "/stylesheets/base.css",  
-       :remove_script_host => true,  
-       :theme_advanced_toolbar_location => "top",  
-       :theme_advanced_toolbar_align => "left",  
-       :theme_advanced_buttons2 => %w{ spellchecker },  
-       :editor_selector => 'mceEditor',  
-       :spellchecker_rpc_url => "/items/spellchecker",  
-       :spellchecker_languages => "+English=en",  
-       :plugins => %w{ contextmenu paste spellchecker}  
-        },  
-       :only => [:new])  
+        :theme => 'advanced',  
+        :mode => "textareas",  
+        :height => 100,  
+        :content_css => "/stylesheets/base.css",  
+        :remove_script_host => true,  
+        :theme_advanced_toolbar_location => "top",  
+        :theme_advanced_toolbar_align => "left",  
+        :theme_advanced_buttons2 => %w{ spellchecker },  
+        :editor_selector => 'mceEditor',  
+        :spellchecker_rpc_url => "/items/spellchecker",  
+        :spellchecker_languages => "+English=en",  
+        :plugins => %w{ contextmenu paste spellchecker}  
+         },  
+        :only => [:new])  
 
   # GET /items
   # GET /items.xml

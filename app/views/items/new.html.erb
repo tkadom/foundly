@@ -1,8 +1,9 @@
 <% form_for :item, @item, :url => items_path, :html => { :multipart => true, :class=>"ItemForm" } do |f| %>
   <%= f.error_messages %>
  <p>
-  <h2><%= f.label :title -%></h2>
-    <%= f.text_field :title %>
+ <h2><%= f.label :title -%></h2>
+  <% use_tinymce -%>
+  <%= f.text_field :title, :class => "mce-editor" %>
     </p>
   <p>
   <h2><%= f.label :description %></H2> <%= f.text_area :description, :rows=>6, :cols => 60 %>

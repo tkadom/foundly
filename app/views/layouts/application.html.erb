@@ -4,6 +4,8 @@
   <head>
     <title><%= h(yield(:title) || "Untitled") %></title>
     <%= stylesheet_link_tag 'foundly' %>
+      <%= javascript_include_tiny_mce_if_used %>
+      <%= tiny_mce if using_tiny_mce? %>
     <%= yield(:head) %>
   </head>
   <body>

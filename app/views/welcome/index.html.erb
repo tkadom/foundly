@@ -3,6 +3,15 @@
 <h2>
   Find things you have lost, report things you have found, collect rewards helping others... 
 </h2>
+<h3>Enter a Keyword to find an item</h3>
+<% form_tag({:controller => 'items', :action => 'index'}, :method => 'get') do %>
+  <label>Keyword</label>
+    <%= text_field_tag :q, h(params[:q]) %>
+    <%= submit_tag 'Search' %>
+    <% end %>
+    <br />
+    <h3>Report a Lost item</h3>
+    <%= link_to 'Click Here', new_item_path() %>
 <% content_for(:sidebar) do %>
 	<div class="box">
 		<h3>Help</h3>

@@ -1,20 +1,19 @@
+<% title "Item List" %>
 <h1>Items</h1>
 
-<table>
+<table width=470>
   <tr>
-    <th>Picture</th>
-    <th>Title</th>
-    <th>Description</th>
+    <th width=100>Picture</th>
+    <th width=300>Title</th>
   </tr>
 
 <% for item in @items %>
   <tr>
-    <td><%= image_tag(item.picture.url) %></td>
-    <td><%= item.title %></td>
-    <td><%= item.description %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td width=100><%= image_tag(item.picture.url) %></td>
+    <td width=300><%= item.title %></td>
+    <td width=25><%= link_to 'Show', item %></td>
+    <td width=25><%= link_to 'Edit', edit_item_path(item) %></td>
+    <td width=25><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

@@ -10,4 +10,8 @@ def use_tinymce
       javascript_include_tag "mce_editor"
     end
 end
+
+def title(page_title)
+  content_for(:title) { page_title }
+end
 end
